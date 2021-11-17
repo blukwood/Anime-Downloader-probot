@@ -17,7 +17,7 @@ def get_ep_link(client, callback_query):
     str_qry = ""
     str_qry_final = str_qry.join(data_spl_ep)
     # print(str_qry_final)
-    animelink = f'https://gogoanime2.org/category/{str_qry_final}'
+    animelink = f'https://gogoanime2.org/{str_qry_final}'
     response = requests.get(animelink)
     plainText = response.text
     soup = BeautifulSoup(plainText, "lxml")

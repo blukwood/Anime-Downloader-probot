@@ -34,7 +34,7 @@ else:
 
 # Creating a Session to activate all Handlers
 session_name = Config.TG_BOT_TOKEN.split(":")[0]
-pgram = Client(
+bot = Client(
     session_name,
     api_id=Config.APP_ID,
     api_hash=Config.API_HASH,
